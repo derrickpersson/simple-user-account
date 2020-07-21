@@ -1,0 +1,11 @@
+{
+  "name": "skills-test",
+  "version": "1.0.0",
+  "description": "Skills test application for Finn.ai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derrick Persson (https://github.com/derrickpersson)",
+  "license": "ISC"
+}
