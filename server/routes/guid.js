@@ -1,13 +1,15 @@
 import express from 'express';
 import { guidService } from "../services"
 
-const guidRouter = express.Router();
+export default guidRouter = (app) => {
+    const route = express.Router();
 
-guidRouter.get('/', (req, res) => {
-    const uuid = guidService.getUniqueId();
-    res.send({
-        id: uuid,
+    app.use('/id', route);
+
+    route.get('/', (req, res) => {
+        const uuid = guidService.getUniqueId();
+        res.send({
+            id: uuid,
+        });
     });
-});
-
-export default guidRouter;
+}
